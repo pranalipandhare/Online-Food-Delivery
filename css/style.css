@@ -1,0 +1,247 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*CSS variables*/
+:root{
+    --navbar-height: 59px;   
+}
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75%;
+    width: 100%; 
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/*Navigation Bar: logo and image*/
+#logo{
+    margin: 20px 45px;
+    padding-bottom: 10px;
+}
+#logo img{
+    height: 80px;
+    margin: 0px -10px;
+}
+
+/*Navigation Bar: List Styling*/
+
+#navbar ul{
+    display: flex;
+} 
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+#navbar input{
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 20px;
+    width: 60px;
+    padding: 8px 170px;
+}
+
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 460px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../bgt.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+#home h1:hover{
+    color: rgb(52, 80, 52);
+    font-size: 3.2rem;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Lora', serif;
+}
+
+/*Services section*/
+#services{
+    padding: 30px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(20rem, 2fr));
+}
+
+#services .box{
+    border: 3px solid brown;
+    padding: 20px;
+    margin: -35px 30px;
+    background-color: #CFD8DC;
+}
+#services .box img{
+   height: 100px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Lora', serif;
+    font-size: 0.8rem;
+}
+
+/*client section*/
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 30px;
+    margin: -10px -5px;
+
+}
+#clients img{
+    height: 90px;
+}
+
+/*Contact Section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 160%;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px ;
+    height: 100%;
+    margin: 0 50px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 7px;
+    font-size: 1.0rem;
+}
+#contact-box form{
+    width: 70%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Lora', serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 5px 15px; 
+    
+}
+
+/*Utility classes*/
+.h-primary{
+    font-size: 2.8rem;
+    padding: 54px;
+    font-family: 'Lora', serif;
+}
+.h-primary h1{
+    font-size: 2.8rem;
+}
+.h-primary:hover{
+    font-size: 3.0rem ;
+    color: rgba(223, 27, 27, 0.927);
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 10px;
+    font-family: 'Lora', serif;
+}
+.h-secondary:hover{
+    font-size: 1.7rem;
+    color: rgb(249, 130, 32);
+}
+.btn{
+    padding: 3px 13px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #e2d9d9fa;
+    color: black;
+    margin: 17px;
+    font-size: 1.4rem;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 176px;
+    height: 45px;
+}
+.btn:hover{
+    color: white;
+    font-family: 'Lora', serif;
+    background-color:black ;
+}
+.center{
+    text-align: center;
+}

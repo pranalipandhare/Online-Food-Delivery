@@ -1,0 +1,108 @@
+/* navigation section */
+#navbar{
+    flex-direction: row;
+}
+
+#navbar ul li a{
+    font-size: 0.5rem;
+    padding: 1px 0.4px;
+}
+#navbar ul li a:hover{
+    padding: 1px 0.4px;
+}
+#logo img{
+    height: 50px;
+    margin: 1 -45px;
+    align-items: center;
+}
+.btn{
+    padding:0;
+    height: 120px;
+    width: 80px;
+    font-size: 0.7rem
+}
+/* home section */
+#home{
+    height: 200px;
+    padding: 8px 10px;
+    align-items: center;
+}
+#home::before{
+    height: 350px;
+}
+#home p{
+    font-size: 0.6rem;
+}
+#home h1:hover{
+    font-size: 28px;
+}
+
+/* Service section */
+#services{
+    flex-direction: column;
+}
+#services .box{
+    margin: 2px;
+    height: 100px;
+}
+#services .box img{
+   height: 40px;
+ }
+ #services .box p{
+    font-size: 0.5rem;
+}
+#services .box h2{
+    font-size: 0.8rem;
+}
+#services .box h2:hover{
+    font-size: 1rem;
+}
+
+/* clients section */
+#clients{
+    overflow: hidden;
+}
+#clients img{
+    height: 50px;
+}
+.client-item{
+    padding: 10px;
+    margin: -10px -2px;
+
+}
+
+/* contact us */
+#contact{
+    position: relative;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px ;
+    height: 100%;
+    margin: 0 50px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 130%;
+    padding: 0.4rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+#contact-box label{
+    font-size: 0.8rem;
+    font-family: 'Lora', serif;
+}
+/* utility classes */
+.h-primary{
+    font-size: 20px;
+}
+.h-primary:hover{
+    font-size: 25px;
+}
+
+footer{
+    padding: 5px 15px; 
+}
