@@ -38,6 +38,10 @@ html{
 #logo img{
     height: 80px;
     margin: 0px -10px;
+    transition-duration: 1s;
+}
+#logo img:hover{
+    transform: scaleY(0.1);
 }
 
 /*Navigation Bar: List Styling*/
@@ -122,15 +126,23 @@ html{
     margin: 4px 4px;
     background-color: #CFD8DC;
 }
+#services .box:hover{
+    background-color:#b7c5cb ;
+}
 #services .box img{
    height: 100px;
-   margin: auto;
+   margin: auto; 
    display: block;
+   transition-duration: 3s;
+}
+#services .box img:hover{
+    transform: scaleX(0.2);
 }
 
 #services .box p{
     font-family: 'Lora', serif;
     font-size: 0.8rem;
+    color: black;
 }
 
 /*client section*/
@@ -218,10 +230,11 @@ footer{
     font-size: 1.5rem;
     padding: 10px;
     font-family: 'Lora', serif;
+    color: black;
 }
 .h-secondary:hover{
     font-size: 1.7rem;
-    color: rgb(249, 130, 32);
+    color: rgb(134, 69, 15);
 }
 .btn{
     padding: 3px 13px;
