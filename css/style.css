@@ -97,14 +97,25 @@ html{
     opacity: 0.89;
 }
 #home h1{
-    color: black;
-    text-align: center;
-    font-family: 'Lora', serif;
-}
-#home h1:hover{
     color: rgb(52, 80, 52);
-    font-size: 3.2rem;
+    text-align: center;
+    font-family: Bold;
+    font-size: 3.8rem;
+    -webkit-text-stroke: 1.5px black;
+    color: transparent;
+    background-image: linear-gradient(rgb(52, 80, 52), rgb(52, 80, 52));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite;
+
 }
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+
 #home p{
     color: black;
     text-align: center;
@@ -219,13 +230,7 @@ footer{
     padding: 54px;
     font-family: 'Lora', serif;
 }
-.h-primary h1{
-    font-size: 2.8rem;
-}
-.h-primary:hover{
-    font-size: 3.0rem ;
-    color: rgba(223, 27, 27, 0.927);
-}
+
 .h-secondary{
     font-size: 1.5rem;
     padding: 10px;
